@@ -20,5 +20,9 @@ const fruit = [ //no key (create arrays)
 console.log(fruit[1])
 
 fruit.push("pineapple") //.push add to the end of the list
+fruit.push("aaa","sss")
 
 console.log(fruit[3])
+
+empty_array = []
+empty_object = {}
