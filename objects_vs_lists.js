@@ -49,3 +49,9 @@ count = new Number("123"); //number object
 
 thing1 = {}; //object literal
 thing2 = new Object();
+
+lots = [];
+for (let i = 0; i < 1000; i++){
+    lots.push(i);
+}
+console.log(lots.length)
