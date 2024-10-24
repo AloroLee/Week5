@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        div{ 
+            background-color: aqua;
+            color: orangered;
+        }
+    </style>
+    <script src="./game.js"></script>
+</head>
+<body>
+    Game
+</body>
+<script>
+    document.body.style.backgroundColor = "green";
+    function showList(list){
+        for (let i = 0; i < list.length; i++){
+            // console.log(i, list[i])
+            // document.body.style.backgroundColor
+            const div = document.createElement("div");
+            // div.innerText = i;
+            let sprite = list[i];
+            div.innerText = sprite.name;
+            div.style.left = sprite.position.x + "rem";
+            div.style.left = sprite.position.y + "rem";
+            document.body.appendChild(div);
+        }
+    }
+    let lee = spriteList [0]; //first one 1 our hero
+    lee.position.x = 5;
+    showList(spriteList)
+</script>
+</html>

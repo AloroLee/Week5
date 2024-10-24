@@ -5,6 +5,7 @@ const car = {
     location:0,
     speed: 5,
     drive: (car)=> car.location += car.speed 
+    // location = (location + speed)
 };
 
 console.log(car.location)
