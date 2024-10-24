@@ -9,9 +9,9 @@ let menuObject = {
 
 for(key in menuObject){
     let list = menuObject[key];
-    console.log(key.toUppercase(), list.length);
+    console.log(key.toUpperCase(), list.length);
     let i = 0;
-    for(text of list){
+    for(let text of list){
         console.log("\t\t",text);
         i++;
     }
